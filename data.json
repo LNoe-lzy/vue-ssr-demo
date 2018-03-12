@@ -1,0 +1,45 @@
+{
+  "data": [{
+    "id": 1,
+    "title": "vue-ssr-客服端测试1",
+    "class": "vue-ssr",
+    "img": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1520835680&di=edc177c7202af63eff4f3e18a37178e1&src=http://img4.duitang.com/uploads/item/201606/24/20160624173615_Ernkc.jpeg",
+    "time": "2018-3-12",
+    "content": "Vue.js 是构建客户端应用程序的框架。默认情况下，可以在浏览器中输出 Vue 组件，进行生成 DOM 和操作 DOM。然而，也可以将同一个组件渲染为服务器端的 HTML 字符串，将它们直接发送到浏览器，最后将静态标记混合为客户端上完全交互的应用程序。"
+  }, {
+    "id": 2,
+    "title": "vue-ssr-客服端测试2",
+    "class": "vue-ssr",
+    "img": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1520835680&di=edc177c7202af63eff4f3e18a37178e1&src=http://img4.duitang.com/uploads/item/201606/24/20160624173615_Ernkc.jpeg",
+    "time": "2018-3-12",
+    "content": "Vue.js 是构建客户端应用程序的框架。默认情况下，可以在浏览器中输出 Vue 组件，进行生成 DOM 和操作 DOM。然而，也可以将同一个组件渲染为服务器端的 HTML 字符串，将它们直接发送到浏览器，最后将静态标记混合为客户端上完全交互的应用程序。"
+  }, {
+    "id": 3,
+    "title": "vue-ssr-客服端测试3",
+    "class": "vue-ssr",
+    "img": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1520835680&di=edc177c7202af63eff4f3e18a37178e1&src=http://img4.duitang.com/uploads/item/201606/24/20160624173615_Ernkc.jpeg",
+    "time": "2018-3-12",
+    "content": "Vue.js 是构建客户端应用程序的框架。默认情况下，可以在浏览器中输出 Vue 组件，进行生成 DOM 和操作 DOM。然而，也可以将同一个组件渲染为服务器端的 HTML 字符串，将它们直接发送到浏览器，最后将静态标记混合为客户端上完全交互的应用程序。"
+  }, {
+    "id": 4,
+    "title": "vue-ssr-客服端测试4",
+    "class": "vue-ssr",
+    "img": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1520835680&di=edc177c7202af63eff4f3e18a37178e1&src=http://img4.duitang.com/uploads/item/201606/24/20160624173615_Ernkc.jpeg",
+    "time": "2018-3-12",
+    "content": "Vue.js 是构建客户端应用程序的框架。默认情况下，可以在浏览器中输出 Vue 组件，进行生成 DOM 和操作 DOM。然而，也可以将同一个组件渲染为服务器端的 HTML 字符串，将它们直接发送到浏览器，最后将静态标记混合为客户端上完全交互的应用程序。"
+  }, {
+    "id": 5,
+    "title": "vue-ssr-客服端测试5",
+    "class": "vue-ssr",
+    "img": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1520835680&di=edc177c7202af63eff4f3e18a37178e1&src=http://img4.duitang.com/uploads/item/201606/24/20160624173615_Ernkc.jpeg",
+    "time": "2018-3-12",
+    "content": "Vue.js 是构建客户端应用程序的框架。默认情况下，可以在浏览器中输出 Vue 组件，进行生成 DOM 和操作 DOM。然而，也可以将同一个组件渲染为服务器端的 HTML 字符串，将它们直接发送到浏览器，最后将静态标记混合为客户端上完全交互的应用程序。"
+  }, {
+    "id": 6,
+    "title": "vue-ssr-客服端测试6",
+    "class": "vue-ssr",
+    "img": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1520835680&di=edc177c7202af63eff4f3e18a37178e1&src=http://img4.duitang.com/uploads/item/201606/24/20160624173615_Ernkc.jpeg",
+    "time": "2018-3-12",
+    "content": "Vue.js 是构建客户端应用程序的框架。默认情况下，可以在浏览器中输出 Vue 组件，进行生成 DOM 和操作 DOM。然而，也可以将同一个组件渲染为服务器端的 HTML 字符串，将它们直接发送到浏览器，最后将静态标记混合为客户端上完全交互的应用程序。"
+  }]
+}
