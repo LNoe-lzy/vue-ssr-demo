@@ -17,12 +17,15 @@
   </header>
 </template>
 <script>
-import { mapState } from 'vuex'
 export default {
-  computed: {
-    ...mapState({
-      nav: state => state.nav
-    })
+  name: 'v-header',
+  data () {
+    return {
+      nav: []
+    }
+  },
+  beforeMount () {
+    this.nav = this.$events.nav
   }
 }
 </script>

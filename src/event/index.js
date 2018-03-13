@@ -4,7 +4,6 @@ function fetch (url, Data, method = 'GET') {
   const data = method === 'POST' ? Data : {}
   const params = method === 'GET' ? Data : {}
   return new Promise((resolve, reject) => {
-    console.log(url)
     axios({
       url: url,
       data,
@@ -27,17 +26,31 @@ function fetch (url, Data, method = 'GET') {
 }
 
 export default {
-  getList ({ commit, state }) {
-    return fetch('http://localhost:8088/api/getlist').then(res => {
-      commit('GET_LIST', res)
-      return res
+  install (Vue) {
+    const EventBus = new Vue({
+      data () {
+        return {
+          list: [],
+          nav: []
+        }
+      },
+      methods: {
+        getList () {
+          return fetch('http://localhost:8088/api/getlist').then(res => {
+            this.list = res
+            return res
+          })
+        },
+        getNav () {
+          return fetch('http://localhost:8088/api/getnav').then(res => {
+            this.nav = res
+            console.log(res)
+            return res
+          })
+        }
+      }
     })
-  },
-  getNav ({ commit, state }) {
-    console.log('get nav')
-    return fetch('http://localhost:8088/api/getnav').then(res => {
-      commit('GET_NAV', res)
-      return res
-    })
+    Vue.prototype.$events = EventBus
+    Vue.$events = EventBus
   }
 }

@@ -12,7 +12,6 @@
 
 <script>
 import List from './list.vue'
-import { mapActions } from 'vuex'
 
 export default {
   name: 'App',
@@ -25,21 +24,13 @@ export default {
     }
   },
   beforeMount () {
-    this.getList().then((res) => {
+    this.list = this.$events.list
+    this.$events.getList().then(res => {
       this.list = res
     })
   },
-  mounted () {
-    console.log(this.$store.state)
-  },
-  asyncData ({ store }) {
-    console.log('fetch data')
-    return store.dispatch('getNav')
-  },
-  methods: {
-    ...mapActions([
-      'getList'
-    ])
+  asyncData ({ store, eventBus }) {
+    return eventBus.getNav()
   }
 }
 </script>

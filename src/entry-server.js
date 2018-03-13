@@ -5,10 +5,9 @@ export default context => {
   // 以便服务器能够等待所有的内容在渲染前，
   // 就已经准备就绪。
   return new Promise((resolve, reject) => {
-    const { app, router, store } = createApp()
+    const { app, router, eventBus } = createApp()
     const { url } = context
     const { fullPath } = router.resolve(url).route
-
     if (fullPath !== url) {
       return reject(new Error(`error: ${fullPath}`))
     }
@@ -24,10 +23,10 @@ export default context => {
         return reject({ code: 404 })
       }
       Promise.all(matchedComponents.map(({ asyncData }) => asyncData && asyncData({
-        store,
+        eventBus,
         route: router.currentRoute
       }))).then(() => {
-        context.state = store.state
+        context.state = eventBus._data
         resolve(app)
       }).catch(reject)
     }, reject)
