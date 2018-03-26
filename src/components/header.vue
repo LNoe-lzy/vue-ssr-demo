@@ -17,7 +17,7 @@ export default {
       nav: []
     }
   },
-  beforeMount () {
+  created () {
     this.nav = this.$events.nav
   }
 }
