@@ -14,7 +14,7 @@
 import List from './list.vue'
 
 export default {
-  name: 'App',
+  name: 'v-main',
   components: {
     'v-list': List
   },
@@ -28,9 +28,6 @@ export default {
     this.$events.getList().then(res => {
       this.list = res
     })
-  },
-  asyncData ({ store, eventBus }) {
-    return eventBus.getNav()
   }
 }
 </script>

@@ -42,7 +42,9 @@ export default {
           })
         },
         getNav () {
+          console.log('123')
           return fetch('http://localhost:8088/api/getnav').then(res => {
+            console.log(res)
             this.nav = res
             console.log(res)
             return res

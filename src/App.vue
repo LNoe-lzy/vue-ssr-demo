@@ -1,17 +1,22 @@
 <template>
   <div id="app">
     <v-header />
-    <router-view />
+    <v-main />
   </div>
 </template>
 
 <script>
 import Header from './components/header'
+import Main from './components/main'
 
 export default {
   name: 'App',
   components: {
-    'v-header': Header
+    'v-header': Header,
+    'v-main': Main
+  },
+  asyncData ({ eventBus }) {
+    return eventBus.getNav()
   }
 }
 </script>
