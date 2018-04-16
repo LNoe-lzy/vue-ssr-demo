@@ -1,5 +1,6 @@
 {
-  "data": [{
+  "nav": ["SSR", "Vue", "Vuex", "Vue-router", "React", "Webpack", "Node.js", "Express"],
+  "list": [{
     "id": 1,
     "title": "vue-ssr-客服端测试1",
     "class": "vue-ssr",

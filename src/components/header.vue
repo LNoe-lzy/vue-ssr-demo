@@ -1,18 +1,25 @@
 <template>
   <header class="header">
     <ul class="header-list">
-      <li class="header-list-item-active">SSR</li>
-      <li class="header-list-item">Vue</li>
-      <li class="header-list-item">React</li>
-      <li class="header-list-item">Node.js</li>
-      <li class="header-list-item">Webpack</li>
-      <li class="header-list-item">Express</li>
-      <li class="header-list-item">Less</li>
+      <li
+        class="header-list-item"
+        v-for="item in nav"
+        :key="item"
+      >{{item}}</li>
     </ul>
   </header>
 </template>
 <script>
 export default {
+  name: 'v-header',
+  data () {
+    return {
+      nav: []
+    }
+  },
+  created () {
+    this.nav = this.$events.nav
+  }
 }
 </script>
 <style lang="less">

@@ -1,33 +1,22 @@
 <template>
   <div id="app">
-    <v-header></v-header>
-    <div class="main">
-      <div class="main-wrapper">
-        <v-list
-          v-for="item in list"
-          :key="item.id"
-          :item="item"
-        ></v-list>
-      </div>
-    </div>
+    <v-header />
+    <v-main />
   </div>
 </template>
 
 <script>
-import mockData from '../data.json'
 import Header from './components/header'
-import List from './components/list.vue'
+import Main from './components/main'
 
 export default {
   name: 'App',
   components: {
     'v-header': Header,
-    'v-list': List
+    'v-main': Main
   },
-  data () {
-    return {
-      list: mockData.data
-    }
+  asyncData ({ eventBus }) {
+    return eventBus.getNav()
   }
 }
 </script>
@@ -44,15 +33,5 @@ body {
 }
 #app {
   min-height: calc(100vh);
-  .main {
-    max-width: 960px;
-    margin: 0 auto;
-    overflow: hidden;
-    .main-wrapper {
-      margin-top: 5.6rem;
-      border-radius: 2px;
-      box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
-    }
-  }
 }
 </style>

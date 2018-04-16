@@ -2,14 +2,17 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import EventBus from './event'
 
-Vue.config.productionTip = false
-
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
-})
+Vue.use(EventBus)
+Vue.config.devtools = true
+console.log(App)
+/* eslint-disable */
+export function createApp () {
+  const app = new Vue({
+    // 注入 router 到根 Vue 实例
+    render: h => h(App)
+  })
+  // 返回 app 和 router
+  return { app, eventBus: app.$events, App }
+}
