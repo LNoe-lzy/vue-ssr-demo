@@ -13,6 +13,7 @@
   "dependencies": {
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
+    "prerender-spa-plugin": "^3.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
